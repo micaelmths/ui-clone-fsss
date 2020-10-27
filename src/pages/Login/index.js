@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaUserAlt, FaLock } from ''
-import { useHistory } from 'react-router-dom'
+import { FaUserAlt, FaLock } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 import logoMissamiFsss from '../../images/logoMissamiFsss.png'
 
@@ -8,18 +8,11 @@ import './styles.css'
 
 function Login() {
 
-  function Logar(e) {
-    e.preventDefault();
-
-    const history = useHistory();
-    history.push('/Dashboard')
-  }
-
   return (
     <div className="container">
       <img src={logoMissamiFsss} alt="Faculdade Santissimo Sacramento"/>
       <h3>Área do aluno</h3>
-      <form onSubmit={Logar}>
+      <form >
         <div className="input">
           <span><FaUserAlt color="#565456"/></span>
           <input type="text"placeholder="Usuário"/>
@@ -28,9 +21,9 @@ function Login() {
           <span><FaLock color="#565456"/></span>
           <input type="password" placeholder="Senha"/>
         </div>
-        <button>Acessar</button>
+        <Link to='/dashboard'>Acessar</Link>
       </form>
-        <p>Micael Matheus front end developer</p>
+        <p>Micael Matheus front-end developer</p>
     </div>
   );
 }

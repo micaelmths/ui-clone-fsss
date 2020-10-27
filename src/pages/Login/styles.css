@@ -52,8 +52,14 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.container form button {
+.container form a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
   margin-top: 20px;
+  text-align: center;
+  
   height: 44px;
   border: none;
   border-radius: 4px;
@@ -65,7 +71,7 @@
   cursor: pointer;
 }
 
-.container form button:hover {
+.container form a:hover {
   color: #000;
 }
 
