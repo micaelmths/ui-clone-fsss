@@ -9,7 +9,7 @@ import './styles.css'
 function Login() {
 
   return (
-    <div className="container">
+    <div className="container-login">
       <img src={logoMissamiFsss} alt="Faculdade Santissimo Sacramento"/>
       <h3>Área do aluno</h3>
       <form >

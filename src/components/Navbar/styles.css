@@ -1,0 +1,23 @@
+.container-navbar {
+  width: 100vw;
+  height: 60px;
+
+  background: rgb(58,58,58);
+  background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(58,58,58,1) 100%);
+  border: 1px solid #000;
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.container-navbar img {
+  width: 42px;
+}
+
+.container-navbar h3 {
+  font-size: 22px;
+  margin-left: 8px;
+  color: #9e9c98;
+}
