@@ -14,4 +14,5 @@
 
 ## Rotas
 /
+/profile
 /dashboard
