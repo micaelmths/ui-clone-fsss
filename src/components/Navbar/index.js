@@ -10,15 +10,13 @@ import './styles.css'
 function Navbar() {
   return (
     <div className="container-navbar">
-      <img src={logoMenuFsss} alt="Faculdade Santíssimo Sacramento"/>
-      <h3>SCIAWEB - DIS</h3>
+      <Link to='/dashboard'>
+        <img src={logoMenuFsss} alt="Faculdade Santíssimo Sacramento"/>
+        <h3>SCIAWEB - DIS</h3>
+      </Link>
       <ul className="nav-left">
         <li>
-          <Link>
-            <FaGraduationCap /> 
-            <p>Dados Acadêmicos</p> 
-            <FaCaretDown />
-          </Link>
+          <Link><FaGraduationCap /><p>Dados Acadêmicos</p><FaCaretDown /></Link>
         </li>
         <li>
           <Link><FaGlobeAmericas /> <p>F.SS.S Virtual</p> <FaCaretDown /></Link>
@@ -28,8 +26,10 @@ function Navbar() {
         </li>
       </ul>
       <ul className="nav-right">
-        <p>Micael</p>
-        <img src={perfil} alt="Micael"/>
+        <Link to='/profile'>
+          <p>Micael</p>
+          <img src={perfil} alt="Micael"/>
+        </Link>
       </ul>
     </div>
   );

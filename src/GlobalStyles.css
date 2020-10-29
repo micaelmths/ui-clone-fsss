@@ -5,14 +5,14 @@
 }
 
 body, html, :root {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background: rgb(204,204,204);
-  background: linear-gradient(0deg, rgba(85,85,85,1) 0%, rgba(204,204,204,1) 100%);
+  background: rgb(204,204,204) ;
+  background: linear-gradient(0deg, rgba(85,85,85,1) 0%, rgba(204,204,204,1) 100%) fixed;
   display: flex;
   justify-content: center;
 }
